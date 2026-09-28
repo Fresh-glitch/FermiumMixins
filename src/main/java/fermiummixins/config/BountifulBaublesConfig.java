@@ -33,8 +33,8 @@ public class BountifulBaublesConfig {
 	)
 	public boolean isShieldFix = false;
 	
-	@Config.Comment("Fixes shields and modifier books showing untranslated names in messages from a dedicated server, such as Quark item links")
-	@Config.Name("Server Item Names Fix (BountifulBaubles)")
+	@Config.Comment("Fixes BountifulBaubles item names being untranslated on dedicated servers")
+	@Config.Name("Server BB Item Names Fix")
 	@Config.RequiresMcRestart
 	@MixinConfig.MixinToggle(lateMixin = "mixins.fermiummixins.late.bountifulbaubles.servernames.json", defaultValue = false)
 	@MixinConfig.CompatHandling(
